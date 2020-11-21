@@ -1,0 +1,115 @@
+h1{
+    text-align: center; 
+    color:green;  
+    text-transform: uppercase;
+    /*background-color: blanchedalmond ; */
+    font-size: 28px;
+    font-family: 'Courier New', Courier, monospace;
+    
+    
+    }
+    .title{
+        text-align: center; 
+    color:blue;  
+    text-transform: uppercase;
+    background-color: blanchedalmond ;
+    font-size: 28px;
+    font-family: 'Courier New', Courier, monospace;
+    
+    }
+
+   #specialTitle{
+        text-align: center; 
+    color:aqua;  
+    text-transform: uppercase;
+    background-color: blanchedalmond ;
+    font-size: 28px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    }
+
+    body {
+        /* background-image: url(https://p.kindpng.com/picc/s/395-3957597_header-flowers-faded-red-faded-flowers-png-transparent.png); */
+        background-repeat: no-repeat;
+        background-size: contain; 
+        background-position: initial;
+    }
+
+    ul{
+        list-style-type: none;
+        border: 1px solid #e7e7e7;
+        background-color: lightblue;
+        overflow: hidden;
+        padding: 0px;
+        margin:  0px;
+
+        
+    }
+    li{
+        float: left;
+
+    }
+
+    a{
+        text-decoration: none;
+        color: blueviolet;
+
+        
+    }
+
+    li a {
+        display: block;
+        color: #666;
+        text-align: center;
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+       
+        
+    }
+
+    li a:hover{
+        background-color: lightyellow;
+    }
+
+
+    .nav-right{
+        float: right;
+    }
+
+    
+    li  a.active{
+
+        background-color: turquoise;
+        color:white;
+    }
+
+    div{
+        border:  3px solid; 
+        border-radius: 15px ;
+        border-style: double;
+        box-shadow: -10px 5px 0px plum;
+        background-image: linear-gradient(pink,aqua);
+    }
+
+    table{
+
+        width: 100%;
+        border: 1px solid;
+        border-collapse: collapse;
+
+    }
+    thead tr{
+        text-align: center;
+    }
+
+    thead{
+        background-color: teal;
+        color: white;
+    }
+
+    tr:nth-child(even)
+    {
+        background-color: silver;
+    }
