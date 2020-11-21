@@ -12,45 +12,58 @@
 <a href="newstudent.html"> New Student </a> &nbsp; &nbsp; &nbsp;
 <!--nav end -->
 
-<form action="#" method="GET">   <!--Post for the security 3shan el data mtzharsh f el URL-->   
-    <label> Full Name 
-        <input type="text" name="txtFullName"> 
-    </label>
-<p>
-    <label> Birthday 
-        <input type="date" name="txtBD"> 
-    </label>
+<form>
+<label> Full Name
+    <input type="text" name="txtfullname">
+</label>
 
-</p>
-<label>
-    Gender: 
-    Male 
-    <input type="radio" name="gender" value="male">
-    Female
-    <input type="radio" name="gender" value="Female">
-</label>  
 <p>
     <label>
-        Address:
-        <textarea rows="20" cols="100" name="txtAdrs"></textarea>
+        ID
+        <input type="number" name="numID">
+    </label>
+</p>
+<p>
+    <label>
+        Birthday
+        <input type="date" name="BDdate">
     </label>
 </p>
 
 <p>
     <label>
-        Choose your faculty: 
-        <select name="faculty">
-            <option value="FCIT"> Computer Science </option>
-            <option value="BUSS">Bussiness </option>
-        </select>
+        Gender
+        Male
+       <input type="radio" name="Gender" value="male">
+        Female
+        <input type="radio" name="Gender" value="female">
     </label>
 </p>
 
-<input type="submit">
- 
+<p>
+    <label>
+      Address
+        <textarea rows="20" cols="100" name="txtAdrs">
+    </label>
+</p>
 
+
+<p>
+    <label>
+     Choose your faculty:
+     <select>
+         <option value="FCIT"> Computer Science </option>
+         <option value="Phar"> Pharmacy </option>
+         <option value="Eng"> Engineering </option>
+     </select>
+    </label>
+</p>
+
+
+<input type="submit"> 
 
 </form>
+
 
 
 
