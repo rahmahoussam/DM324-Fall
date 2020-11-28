@@ -1,79 +1,112 @@
 <html>
     <head>
-<title> New Student </title>
-    </head>
+        <title>DM324 - Home Page</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
    
+    </head>
+
     <body>
 
-<!--nav start--> 
-
-<a href="index.html"> Home </a> &nbsp; &nbsp; &nbsp;
-<a href="StudentList.html"> Student List </a> &nbsp; &nbsp; &nbsp;
-<a href="newstudent.html"> New Student </a> &nbsp; &nbsp; &nbsp;
-<!--nav end -->
-
-<form>
-<label> Full Name
-    <input type="text" name="txtfullname">
-</label>
-
-<p>
+        <nav>
+            <ul>
+                <li ><a href="index.html"  >Home</a></li>
+                <li ><a href="studentlist.html" >Students List</a></li>
+                <li ><a href="new_student.html" class="active">New Student</a></li>
+        
+                <li class="nav-right"><a href="sign.html">Logout</a></li>
+            </ul>
+        
+        
+        </nav>
+<hr/>
+<section>
+    <h1 class="title">New Student</h1>
+<form action="#" method="GET" > <!--action_page.php-->
+ <!--Personal Info-->
+ <fieldset >
+    <legend>Personal Information</legend>
+   
+    <p>
     <label>
-        ID
-        <input type="number" name="numID">
+        Full Name: 
+        <input type="text" name="txtFullName" required> 
+
+    </label>
+</p>
+   <p> 
+    <label>
+        Birthdate: 
+        <input type="date" name="txtBirthDate">
+        
     </label>
 </p>
 <p>
     <label>
-        Birthday
-        <input type="date" name="BDdate">
-    </label>
-</p>
-
-<p>
-    <label>
-        Gender
+        Gender: 
+        <input type="radio" name="gender" value="male">
         Male
-       <input type="radio" name="Gender" value="male">
+        <input type="radio" name="gender" value="female">
         Female
-        <input type="radio" name="Gender" value="female">
     </label>
 </p>
+</fieldset>
 
+<!--Personal Info-->
+
+<!--Contact Info-->
+<fieldset>
+    <legend>Contact Information</legend>
+   
 <p>
     <label>
-      Address
-        <textarea rows="20" cols="100" name="txtAdrs">
+        Email: 
+        <input type="email" name="txtEmail">
+
     </label>
 </p>
-
-
 <p>
     <label>
-     Choose your faculty:
-     <select>
-         <option value="FCIT"> Computer Science </option>
-         <option value="Phar"> Pharmacy </option>
-         <option value="Eng"> Engineering </option>
-     </select>
+        Phone: 
+        <input type="tel" name="txtPhone">
+
     </label>
 </p>
+<p>
+    <label>
+        Address:
+        <textarea rows="5" cols="100" name="txtAddress"></textarea>
+    </label>
+</p>
+</fieldset>
+<!--#Contact Info-->
 
+<!--University Info-->
+<fieldset>
+    <legend>University Information</legend>
+   
+<p><label >
+    Choose Your Faculty:
+    <select name="faculty">
+        <option value="f1">Faculty 1       
+        </option>
+        <option value="f2">Faculty 2       
+        </option>
 
-<input type="submit"> 
+    </select>
+</label></p>
+</fieldset>
+
+<input type="submit" class="button" value="Add" name="add">
 
 </form>
 
+</section>   
+<hr/>
+<footer>
+ <a href ="http://www.fue.edu.eg" target="_blank">&copy; Future University in Egypt</a>&nbsp;&nbsp;&mdash;&nbsp;&nbsp;
+ <a href="mailto:20132627@fue.edu.eg">contact us</a>
+</footer>
 
+</body>
 
-
-<!--footer start-->
-
- <a href="https://www.fue.edu.eg/" target="blank"> &copy;Future University in Egypt </a> &nbsp; &nbsp; &mdash; &nbsp; &nbsp;
- <a href="mailto:rahmatallah.hassan@fue.edu.eg" target="blank"> Contact Us </a>
-<!--footer end-->
-
-
-
-    </body>
 </html>
